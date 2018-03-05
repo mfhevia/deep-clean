@@ -3,7 +3,12 @@
 Simple library to recursively clean an object. The returned object will not have null values, empty strings or empty objects.
 Original object will not be modify.
 
-Usage example:
+## Installation:
+```javascript
+npm install deep-clean --save
+```
+
+## Usage example:
 ```javascript
 const cleaner = require('deep-clean');
 
@@ -40,4 +45,9 @@ const cleanedObj = cleaner(objToTest);
         key3: 14 
     }
 */
+```
+
+## Testing
+```javascript
+npm run test
 ```
