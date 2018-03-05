@@ -1,6 +1,6 @@
 'use strict';
 
-const removeEmpty = (obj) => {
+const deepClean = (obj) => {
 
   const isObject = (value) => Object.prototype.toString.call(value) === Object.prototype.toString.call({});
   const isEmptyObject = (value) => isObject(value) && Object.keys(value).length === 0;
@@ -19,4 +19,4 @@ const removeEmpty = (obj) => {
   return clean(obj);
 }
 
-module.exports = removeEmpty;
+module.exports = deepClean;

@@ -1,11 +1,11 @@
-# Deep cleaner
+# Deep clean
 
 Simple library to recursively clean an object. The returned object will not have null values, empty strings or empty objects.
 Original object will not be modify.
 
 Usage example:
 ```javascript
-const cleaner = require('deepCleaner');
+const cleaner = require('deepClean');
 
 const objToClean = {
     key1: { 
