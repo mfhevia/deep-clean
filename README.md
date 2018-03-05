@@ -5,7 +5,7 @@ Original object will not be modify.
 
 Usage example:
 ```javascript
-const cleaner = require('deepClean');
+const cleaner = require('deep-clean');
 
 const objToClean = {
     key1: { 
