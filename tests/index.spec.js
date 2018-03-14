@@ -41,5 +41,9 @@ describe('Clean test object', () => {
 
         expect(cleanObj).not.to.have.property('deepEmptyObj');
     })
+
+    it('Should fail it input parameter is not an object', () => {
+        expect(cleaner.bind(null, [])).to.throw(Error);
+    })
 });
 

@@ -7,6 +7,8 @@ const deepClean = (obj) => {
   const isEmptyValue = (value) => value === null || value === '';
   const mustBeDeleted = (value) => isEmptyValue(value) || isEmptyObject(value);
 
+  if (!isObject(obj)) throw new Error('Input parameter must be an object');
+
   const copy = JSON.parse(JSON.stringify(obj));
   const clean = (copy) => Object.keys(copy).reduce((acc, key) => {
 
