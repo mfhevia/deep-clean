@@ -9,7 +9,7 @@ const deepClean = (obj) => {
 
   if (!isObject(obj)) throw new Error('Input parameter must be an object');
 
-  const copy = JSON.parse(JSON.stringify(obj));
+  const json = JSON.parse(JSON.stringify(obj));
   const clean = (copy) => Object.keys(copy).reduce((acc, key) => {
 
     let value = copy[key];
@@ -18,7 +18,7 @@ const deepClean = (obj) => {
     return acc;
   }, {})
 
-  return clean(obj);
+  return clean(json);
 }
 
 module.exports = deepClean;
